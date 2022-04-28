@@ -1,0 +1,42 @@
+.about{
+    width:80%;
+    margin:40px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about img{
+    width:250px;
+    height:250px;
+}
+.abt{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+}
+.abt p{
+    font-size: 12px;
+}
+.abt h1{
+    font-size:18px;
+    text-align: center;
+}
+.abt section{
+    width:550px;
+    margin:auto 20px;
+}
+
+@media(max-width:700px){
+   .abt{
+    display:flex;
+    flex-direction: column;
+    
+}
+.about img{
+    width:300px;
+}
+.abt section{
+    width:350px;
+    margin:0px;
+}
+
+}
