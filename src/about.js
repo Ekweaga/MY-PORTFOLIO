@@ -17,6 +17,7 @@ const About = () => {
          IT personnel/web developer with passion for tailored solutions to solve problems in a thriving and professional manner.
          Bachelor's degree in Information Technology and two years experience with HTML5, Javascript, CSS frameworks and other Javascript frameworks(ReactJs, Angular)
        </p>
+       <div data-aos="fade-in"><button><a href="https://github.com/Ekweaga" style={{color:'black',textDecoration:'none'}}>Github</a></button></div>
        
       </section>
       <div className='jonimg'>

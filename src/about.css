@@ -29,6 +29,7 @@
    .abt{
     display:flex;
     flex-direction: column;
+   
     
 }
 .about img{
@@ -38,5 +39,35 @@
     width:350px;
     margin:0px;
 }
+
+}
+.abt section button{
+    width:200px;
+    border:1px solid goldenrod;
+    background: goldenrod;
+    margin-top:20px;
+    padding:5px;
+    border-radius: 15px;
+}
+.abt section{
+    width:350px;
+    margin-bottom:50px;
+    margin-top:35px;
+}
+
+@media(width:360px){
+    .abt{
+        width:100%;
+       
+    }
+    .abt p{
+    margin-left: -35px;
+    font-size: 11px;
+   
+    }
+    .abt section{
+        width:350px;
+        margin-bottom:30px;
+    }
 
 }

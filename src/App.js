@@ -36,7 +36,7 @@ function App() {
   </div>
   
 </div>
-   <Navbar />
+   
    <Header />
    <About />
    <Services id='services' /><br/>

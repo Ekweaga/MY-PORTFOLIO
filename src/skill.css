@@ -11,7 +11,7 @@
     font-size: 25px;
 }
 .inner .header::after{
-    content:"";
+    
     position:absolute;
     bottom:10px;
     left:50%;

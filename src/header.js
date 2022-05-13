@@ -2,6 +2,7 @@ import React from 'react'
 import jon from './chax.jpg'
 import './header.css';
 import Typical from 'react-typical'
+import Navbar from './navbar';
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
     <>
     <div className='cover'>
     <div className='wrapper'>
+     
       <div className='header'>
       <div>
         <h1>

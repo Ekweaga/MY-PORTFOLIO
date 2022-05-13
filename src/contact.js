@@ -12,7 +12,7 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-   e.target.value = ''
+    
 
     emailjs.sendForm('service_5syrutj', 'template_gzm1999', form.current, 'user_ohuOwLi0xmoYnCEvcRvaF')
       .then((result) => {
@@ -28,21 +28,21 @@ const Contact = () => {
          <h6>
            LET'S CONNECT
          </h6>
-         <div>
+         <div >
            <p>You can always reach out to us with your project</p>
          </div><br/><br/>
          <div className='content'>
 
          <div className='contact' data-aos="fade-in">
-         <span>
+         <span style={{fontSize:'12px'}}><span> > </span>
            
-            <b><img src={messaf}/>Address:</b>  <br/>FUTA, AKURE
+            <b style={{fontSize:'12px'}}>&nbsp;Address:</b>  <br/>FUTA, AKURE
            </span>
-           <span>
-            <b><img src={phone}/> Phone No:</b> <br/>08148837221
+           <span style={{fontSize:'12px'}}><span> > </span>
+            <b style={{fontSize:'12px'}} ><img src={phone} />&nbsp; Phone No:</b> <br/>08148837221
            </span>
-           <span className='email'>
-            <b><img src={email}/>Email:</b>  <br/>hikay133@gmail.com
+           <span className='email' style={{fontSize:'12px'}}><span> > </span>
+            <b style={{fontSize:'12px'}}><img src={email}/>&nbsp;Email:</b>  <br/>hikay133@gmail.com
            </span>
          </div>
           <div className='forms' data-aos="fade-out">
