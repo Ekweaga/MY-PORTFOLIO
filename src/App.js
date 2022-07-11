@@ -12,6 +12,8 @@ import 'aos/dist/aos.css';
 import moon from './icon-moon.svg';
 import sun from './icon-sun.svg';
 import { useEffect,useState} from 'react'
+import css from './frada.png'
+import Typical from 'react-typical'
 
 
 function App() {
@@ -27,27 +29,63 @@ function App() {
     Aos.init({duration:1000})
   },[])
   return (
-    <div className={bg ? 'appchange': 'App'}>
+  <><section className="home">
+    < div class='container flex'>
+      <div className='left'>
+      <div className='img'>
+        <img src={css}/>
+      </div>
+      </div>
+     <div className='right topMargin'>
+<h1>I AM  A  <Typical
+        steps={['FRONT-END DEV', 1000, 'WORDPRESS DEV', 1000, 'SEO EXPERT' , 1000]}
+        loop={Infinity}
+        wrapper="p"
+      /></h1>
+      <div className='socialIcon'>
+        <span>icon</span>
+        <span>icon</span>
+        <span>icon</span>
+      </div>
+      <p>Leveraging the power of computer vision, deep learning, machine learning,</p>
+      <button className='primary-btn btn'>Contact Us</button>
+     </div>
+    </div>
     
-<div className='imgs'>
-  <div className='ci'>
-  <img src={img ? moon:sun} onClick={()=>changeimg()}/>
-  
+   </section>
+   <section className="branding">
+<div className='container grid'>
+  <div className='box flex'>
+   <div className='text'><h1>01</h1></div>
+   <div className='para'>
+    <h2>WEB DESIGN</h2>
+    <p>ssmsskdnfndkfkdidid kdwidjwdowodkwodkowdkowdk</p>
+   </div>
+  </div>
+  <div className='box flex'>
+   <div className='text'><h1>02</h1></div>
+   <div className='para'>
+    <h2>SEO</h2>
+    <p>ssmsskdnfndkfkdidid kdwidjwdowodkwodkowdkowdk</p>
+   </div>
+  </div>
+  <div className='box flex'>
+   <div className='text'><h1>03</h1></div>
+   <div className='para'>
+    <h2>WEB DEV</h2>
+    <p>ssmsskdnfndkfkdidid kdwidjwdowodkwodkowdkowdk</p>
+   </div>
+  </div>
+  <div className='box flex'>
+   <div className='text'><h1>04</h1></div>
+   <div className='para'>
+    <h2>MARKETING</h2>
+    <p>ssmsskdnfndkfkdidid kdwidjwdowodkwodkowdkowdk</p>
+   </div>
   </div>
   
 </div>
-   
-   <Header />
-   <About />
-   <Services id='services' /><br/>
-  
-   <Project />
-  
-   <Skills />
-   <Contact />
-  
-  
-    </div>
+   </section></> 
   );
 }
 

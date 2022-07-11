@@ -1,54 +1,118 @@
-.App {
-  text-align: center;
-  background-color: rgb(0, 0, 0);
-  color:rgb(255, 255, 255);
-  position:relative;
-  
- 
+*{
+    padding:0;
+    margin:0;
 }
-.appchange{
-  color:rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-  text-align: center;
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.imgs{
-  position: absolute;
-  top:30px;
-  z-index: 222;
-  right:20px;
+
+.container{
+    max-width:80%;
+    margin:auto;
 }
-.imgs .ci{
-  position: relative;
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+    
 }
-.imgs img{
-  width:30px;
-  position: absolute;
-  top:5px;
-  right:25px;
- 
+.left,.right{
+    width:50%;
+    position:relative;
+
+}
+.topMargin{
+    margin-top:80px;
+}
+.home{
+    height:90vh;
+}
+.home .img{
+    height:90vh;
+    width:100%;
+    position:relative;
+}
+
+.home img{
+    position: absolute;
+    top:0;
+    height:90vh;
+    width:100%;
+    left:0;
+    object-fit:contain;
+    transform: sale(1.1);
+}
+.home h1{
+    font-size:50px;
+}
+.home button{
+   
+    
+    border:none;
+    color:white;
+    font-weight:600;
+    font-size:15px;
+   
+    cursor: pointer;
+    background-color: #38d16a;
+    width:150px;
+    box-shadow: 0 13px 27px 0 rgba(245 78 162 / 25%);
+}
+
+.home button:hover{
+    background-color: crimson;
+    color:white;
+    box-shadow: 0 13px 27px 0 rgba(245 78 162 / 25%);
+}
+.home .right{
+    margin-top:15%;
+}
+.home p{
+    margin:20px 0;
+}
+
+p{
+    line-height: 30px;
+}
+.branding{
+    background-color: black;
+    color:white;
+    padding: 80px 0;
+    margin-bottom: 200px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:
+    20px;
+}
+.branding h1{
+    font-size:30px;
+    color:#38d16a;
+    margin-right:20px;
+}
+.branding h2{
+    font-weight:500;
+    font-size:22px;
+    margin:10px 0 20px 0;
+}
+.branding p{
+    opacity:0.7;
 }
 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+@media(max-width:700px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:
+        20px;
+    }
+    .flex{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        
+    }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-
