@@ -45,7 +45,7 @@ body{
 .home h1{
     font-size:50px;
 }
-.home button{
+ button{
    
     
     border:none;
@@ -78,7 +78,7 @@ p{
     background-color: black;
     color:white;
     padding: 80px 0;
-    margin-bottom: 200px;
+    
 }
 .grid{
     display: grid;
@@ -99,20 +99,230 @@ p{
 .branding p{
     opacity:0.7;
 }
+.mtop{
+    margin-top:50px;
+}
+h3{
+    font-size:15px;
+    font-weight:500;
+    text-transform: uppercase;
+    color:#38d16a;
+    margin:20px 0;
+}
+.heading h1{
+    font-size:30px;
+    margin-bottom:30px;
+}
+.about p{
+margin-bottom:20px;
+}
+.about .left{
+    padding-right:30px;
+}
+.about .img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
 
+}
+.about .img::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:-01px;
+    right:0;
+   
+    width:400px;
+    height:70vh;
+    z-index:-1
+}
+.about img{
+    height:80vh;
+    width:250px;
+}
+.services{
+    text-align:center;
+    background-color: #f8f9fe;
+    padding:50px 0;
+    margin-bottom: 100px;
+}
+.services .box{
+    text-align: left;
 
+}
+.services img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.services .text{
+    background-color: white;
+    box-shadow:0 5px 20px 0 rgba(0 0 0 /6%);
+    padding:4px;
+    margin: 2px;
+    margin-top:-40px;
+    position:relative;
+    z-index: 11;
+}
+.services .text h2{
+font-weight: 500;
+font-size:22px;
+margin-bottom: 20px;
+padding-left:5px;
+}
+.wrapper{
+    margin-bottom: 00px;
+}
+.skill{
+    padding:50px 0 ;
+  
+    
+}
+.skill .heading{
+    text-align:center;
+}
+.progress{
+    background-color: #d5d5d5;
+    border-radius:20px;
+    position: relative;
+    margin:45px 0;
+    height:20px;
+    width:90%;
+    
+}
+.progress .progress-done h4{
+    position: absolute;
+    top:-20px;
+    font-size:15px;
+    font-weight: 600;
+    color:black;
+    z-index: 11;
+}
+.progress .progress-done h4:nth-child(2){
+    right:0;
+    font-size:17px;
+    font-weight: 400;
+    color:#7f9cb5;
+}
+.progress-done{
+    background-color: #0d381b;
+    border-radius: 20px;
+    color:white;
+    height:100%;
+    width:0;
+    opacity:0;
+    transition: 1s ease 0.3s;
+}
+.me{
+    height:200px;
+    background-color: #134223;
+ 
+    display:flex;
+    color:white;
+    align-items:center;
+   justify-content: space-around;
+}
+footer{
+    background-color: #000000;
+    color:white;
+   margin-top:20px;
+    padding:100px 0 0;
 
+}
+footer p{
+    margin:20px 0;
+}
+footer h2{
+    margin-bottom: 30px;
+    font-size:20px;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+footer li{
+    margin-bottom:15px;
+}
+footer li:before{
+    content:'*';
+    font-size:20px;
+    vertical-align: middle;
+    line-height:10px;
+    margin-right:20px;
+    color:#38d16a;
+
+}
+footer .box p{
+margin-top:15px;
+}
+footer span{
+    color:#38d16a;
+    opacity:1;
+}
+footer .icon{
+    display:flex;
+    margin-top:20px;
+}
+.legal{
+    display:flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    margin-top:70px;
+    padding:20px 0;
+}
 @media(max-width:700px){
-    .grid{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap:
-        20px;
-    }
-    .flex{
+    .me{
+        height:400px;
+        background-color: #134223;
+       
         display:flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        
+        flex-direction: column;
+        color:white;
+        align-items:center;
+       justify-content: center;
     }
+    .left,.right{
+        width:100%;
+    }
+    .home .container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .home{
+        height:134vh;
+    }
+    .home .img{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+    .home img{
+        width:100%;
+        height:100%;
+        position:relative;
+    }
+    .home h1{
+        font-size:30px;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .about .img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .about .img::after{
+        display:none;
+    }
+    .skill span{
+        font-size:10px;
+    }
+.content{
+    flex-direction:column;
+}
 }
