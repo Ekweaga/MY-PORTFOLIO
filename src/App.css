@@ -270,6 +270,7 @@ footer .icon{
     border-top: 1px solid rgba(255,255,255,0.5);
     margin-top:70px;
     padding:20px 0;
+    align-items:center;
 }
 @media(max-width:700px){
     .me{
@@ -311,18 +312,25 @@ footer .icon{
     .about .container{
         flex-direction: column;
     }
-    .about .img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
+    .about img{
+        height:80vh;
+        width:250px;
+        margin-left:-70px
     }
-    .about .img::after{
-        display:none;
-    }
+   
+   
     .skill span{
         font-size:10px;
     }
 .content{
     flex-direction:column;
+}
+.legal{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    margin-top:70px;
+    padding:20px 0;
 }
 }

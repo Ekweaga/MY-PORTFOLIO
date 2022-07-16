@@ -54,7 +54,7 @@ function App() {
   return (
   <>
   <Menuheader/>
-  
+ 
   <section className="home">
     < div class='container flex'>
       <div className='left'>
@@ -246,8 +246,8 @@ function App() {
     <div> <h1 style={{textAlign:'center'}}>9800+</h1>
       <p>LINES OF CODE</p></div>
    </section>
-<footer>
-  <div className="container grid">
+   <footer>
+  <div className="container grid footer">
     <div className="box">
       <h5>CTS</h5>
       <p>Leverages the latest technologies like web development, UI/Ux design, Blockchain, and App Development for clients to get the best outcome for their budget. 
