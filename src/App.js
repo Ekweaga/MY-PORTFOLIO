@@ -132,7 +132,7 @@ function App() {
           <p> Comes with Bachelor's degree in Information Technology where I was exposed to programming, concepts of Information technology
             ,software development. I also acquire knowldge in software methodlogies, cloud computing and hardware and embedded systems
           </p>
-             <button className="primary-btn" style={{padding:'8px', marginBottom:'20px'}}><a href="/public/chakra1.pdf" style={{color:'white',textDecoration:'none'}} download="Resume/CV">Download CV</a></button>
+             <button className="primary-btn" style={{padding:'8px', marginBottom:'20px'}}><a href="/Resume_CV.pdf" style={{color:'white',textDecoration:'none'}} download="Resume/CV">Download CV</a></button>
       </div>
       <div className="right">
         <div className="img">
@@ -142,72 +142,100 @@ function App() {
     </div>
    </section>
 
-   <section className="services topMargin" id="services">
-    <div className="container">
-      <div className="heading">
-        <h3>
-          MY SERVICES
-        </h3>
-        <h1>Interactive Services Offered By Me</h1>
+  
+   <div id="services" class="cards-1 bg-gray services topMargin">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <h2>Explore My Services</h2>
+          </div> 
       </div>
-      <div className="contain grid topMargin">
-        <div className="box" data-aos="fade-in">
-          <div className='img'>
-            <img src={mobile} style={{height:'200px'}}/>
-          </div>
-          <div className="text">
-            <h2>
-              WEB DESIGN
-            </h2>
-            <p>I provide different kinds of websites designs layouts</p>
+      <div class="row">
+          <div class="col-lg-12">
+              
+            <div className="row">
+            <div class="card col-lg-4">
+                  <div class="card-icon">
+                      <span class="fas fa-headphones-alt"></span>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">WordPress Design</h5>
+                      <p>Giving quality and awesome website designs that suit your business and ideas</p>
+                      <a class="read-more no-line" href="#">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                  </div>
+              </div>
+              <div class="card col-lg-4">
+                  <div class="card-icon red">
+                      <span class="far fa-clipboard"></span>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">SEO Services</h5>
+                      <p>Without traffic no business can stand,with my knowledge of marketing I can use organic method(SEO) to drive traffic with quality backlinks</p>
+                      <a class="read-more no-line" href="#">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                  </div>
+              </div>
+
+
+              <div class="card col-lg-4">
+                  <div class="card-icon red">
+                      <span class="far fa-clipboard"></span>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Web Development</h5>
+                      <p>Giving quality and awesome website designs that suit your business and ideas</p>
+                      <a class="read-more no-line" href="#">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                  </div>
+              </div>
+
+              <div class="card col-lg-4">
+                  <div class="card-icon red">
+                      <span class="far fa-clipboard"></span>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Start Ups</h5>
+                      <p>Vulputate nibh feugiat. Morbi pellent diam nec libero lacinia, sed ultrices velit scelerisque. Nunc placerat justo sem</p>
+                      <a class="read-more no-line" href="#">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                  </div>
+              </div>
+
+
+              <div class="card col-lg-4">
+                  <div class="card-icon red">
+                      <span class="far fa-clipboard"></span>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">E-commerce/FinTech</h5>
+                      <p>Vulputate nibh feugiat. Morbi pellent diam nec libero lacinia, sed ultrices velit scelerisque. Nunc placerat justo sem</p>
+                      <a class="read-more no-line" href="#">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                  </div>
+              </div>
+
+                <div class="card col-lg-4">
+                  <div class="card-icon green">
+                      <span class="far fa-comments"></span>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">Front-End Dev</h5>
+                      <p>Ety suscipit metus sollicitudin euqu isq imperdiet nibh nec magna tincidunt, nec pala vehicula neque sodales verum</p>
+                      <a class="read-more no-line" href="#">Learn more <span class="fas fa-long-arrow-alt-right"></span></a>
+                  </div>
+              </div>
+
             </div>
-        </div>
-        <div className="box" data-aos="fade-in">
-          <div className='img'>
-            <img src={blog} style={{height:'220px'}}/>
+             
+          
+            
+              
+              
+               
+            
+            
+              
           </div>
-          <div className="text">
-            <h2>
-              WEB DEV
-            </h2>
-            <p>Provides web development using latest technologies</p>
-            </div>
-        </div>
-        <div className="box" data-aos="fade-in">
-          <div className='img'>
-            <img src={seo} style={{height:'200px'}}/>
-          </div>
-          <div className="text">
-            <h2>
-              SEO
-            </h2>
-            <p>Traffic, the backbone of sales. Then SEO is the answer!!</p>
-            </div>
-        </div>
-        <div className="box" data-aos="fade-in">
-          <div className='img'>
-            <img src={press} style={{height:'200px'}}/>
-          </div>
-          <div className="text">
-            <h2>
-              WORDPRESS
-            </h2>
-            <p>Provide WordPress services such as blogs, websites and portfolio</p>
-            </div>
-        </div>
       </div>
-    </div>
-   </section>
-   <section className="wrapper branding" id="contact">
-<div className="container">
-  <div className="box">
-    <h3>LOOKING FOR EXCLUSIVE SERVICES?</h3>
-    <h2>Get The Best For Your Business</h2>
-    <p>I provide awesome and satisfying services to my clients at affordable prices</p>
-    <button style={{padding:'8px'}} data-aos="fade-up">Contact Us</button>
   </div>
-</div>
-   </section>
+</div> 
+
 
    <section className="skill" id="">
     <div className="container">
@@ -215,15 +243,64 @@ function App() {
       <h1>SOME OF MY SKILLS</h1>
       </div>
       <div className="content flex">
-        <div className="left topMargin">
-          <Progress done="90" title="HTML"/>
-          <Progress done="70" title="JAVASCRIPT"/>
-          <Progress done="80" title="WORDPRESS"/>
-          <Progress done="60" title="REACTJS"/>
-          <Progress done="60" title="SEO"/>
-          <Progress done="75" title="CSS/BOOTSTRAP/SASS"/>
-          <Progress done="40" title="PHP/NODEJS"/>
-         
+        <div className="left topMargin">       
+        <div class="row">
+            <div class="col-lg-12 mb-1">
+                <div class="progress " style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'80%'}} arial-valuenow="25" arial-valuemin="0">HTML</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1">
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'70%'}} arial-valuenow="25" arial-valuemin="0">CSS/BOOTSTRAP/SASS/TAILWIND</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1">
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'70%'}} arial-valuenow="25" arial-valuemin="0">JAVASCRIPT</div>
+                </div>
+            </div><br/>
+             <div class="col-lg-12 mb-1">
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'50%'}} arial-valuenow="25" arial-valuemin="0">REACTJS</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1" >
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'30%'}} arial-valuenow="25" arial-valuemin="0">VUEJS</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1" >
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'60%'}} arial-valuenow="25" arial-valuemin="0">CHAKRA UI/MATERIAL UI/STYLED COMPONENTS/ANT DESIGN</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1" >
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'50%'}} arial-valuenow="25" arial-valuemin="0">REDUX/VUEX</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1" >
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'65%'}}arial-valuenow="25" arial-valuemin="0">SEO</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1"style={{height:'30px'}}>
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'65%'}} arial-valuenow="25" arial-valuemin="0">FIREBASE</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1">
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'50%'}} arial-valuenow="25" arial-valuemin="0">WORDPRESS</div>
+                </div>
+            </div>
+             <div class="col-lg-12 mb-1">
+                <div class="progress" style={{height:'30px'}}>
+                    <div class="progress-bar bg-success" role="progressbar" style={{width:'80%'}} arial-valuenow="25" arial-valuemin="0">WEB DEVELOPMENT</div>
+                </div>
+            </div>
+        </div>
         </div>
         <div className="right mtop" data-aos="slide-left">
           <h1 style={{fontWeight:'600'}}>Solve A Problem</h1>
@@ -234,6 +311,20 @@ function App() {
       </div>
     </div>
    </section>
+
+   <div class="basic-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="text-container">
+                  <h2>Hire Me</h2>
+                  <p class="p-large">Creativity & innovations keeps me moving. Your favourite web developer</p>
+                  <a class="btn-solid-lg" href="/Resume_CV.pdf">Download Resume</a>
+              </div> 
+          </div> 
+      </div>
+  </div> 
+</div> 
    <section className='me'>
     <div>
       <h1 style={{textAlign:'center'}}>20+</h1>
@@ -246,6 +337,52 @@ function App() {
     <div> <h1 style={{textAlign:'center'}}>9800+</h1>
       <p>LINES OF CODE</p></div>
    </section>
+
+   <div id="contact" class="form-1">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="text-container">
+                  <div class="section-title">Get Your Project Done</div>
+                  <h2>Contact Me</h2>
+                  <p>Write to me your project ideas in full details and get it donw within stipulated time limit.
+                   <span style={{fontWeight:'bold'}}> Your satisfaction is my happiness, your favourite web developer</span>
+                  </p>
+                
+              </div> 
+          </div> 
+          <div class="col-lg-6">
+             
+              <form>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" required />
+                  </div><br/>
+                  <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" required />
+                  </div><br/>
+                  <div class="form-group" style={{width:'100%'}}>
+                      <input type="text" class="form-control" placeholder="Industry" required />
+                  </div><br/>
+                  <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your product" required />
+                  </div><br/>
+                  <div class="form-group">
+                      <button type="submit" class="form-control-submit-button" style={{borderRadius:'15px'}}>Submit</button>
+                  </div>
+              </form>
+            
+          </div> 
+      </div>
+  </div> 
+</div>
+
+
+
+
+
+
+
+   
    <footer>
   <div className="container grid footer">
     <div className="box">
