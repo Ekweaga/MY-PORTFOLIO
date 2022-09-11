@@ -1,50 +1,64 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './navbar.css'
 import jon from './jon.jpeg'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import closeimg from './icon-close.svg';
+
+import openimg from './icon-hamburger.svg'
+
 
 const Menuheader = () => {
-  return (
-   <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
-  <div class="container">
-       <a class="navbar-brand logo-text" href="#">Chax</a> 
-      <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" style={{zIndex:'111'}}>
-          <ul class="navbar-nav ms-auto navbar-nav-scroll">
-              <li class="nav-item" style={{color:'white'}}>
-                  <a class="nav-link active" aria-current="page" href="#header" style={{color:'white'}}>Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#details">Details</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#features">Features</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Drop</a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                      <li><a class="dropdown-item" href="#">Article Details</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">Terms Conditions</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
-                  </ul>
-              </li>
-          </ul>
-          <span class="nav-item">
-              <a class="btn-solid-sm" href="#contact">Contact</a>
-          </span>
-      </div> 
-  </div> 
-</nav>
-  )
+    const [toggle,settoogle] = useState(false);
+    const [close,setclose] = useState(true);
+    const [open,setopen] = useState(false);
+    const [screenwidth, setscreenwidth] = useState(window.innerWidth)
+    const tooglenav=()=>{
+      settoogle(true)
+      setclose(false)
+      setopen(true)
+     
+    }
+    
+    const toogleclose = ()=>{
+      settoogle(false);
+      setclose(true)
+      setopen(false)
+    }
+  
+    useEffect(()=>{
+      const changewidth = ()=>{
+        if(typeof window !== "undefined"){
+         
+            setscreenwidth(window.innerWidth)
+          }
+        
+      }
+      window.addEventListener('resize',changewidth)
+    },[])
+    return (
+      <div className='headers shadow'> 
+        <div className='header-logo'>
+           <h1 style={{fontSize:'17px',color:'white'}}>CHAX</h1>
+        </div>
+        <div className='header-menu' style={{backgroundColor:toggle ? "green": null}}>
+        {(toggle || screenwidth > 500) && (<div className="menuBar">
+            <a href="" style={{textDecoration:'none',color:'white'}} >Home</a>
+            <a href="#about" style={{textDecoration:'none',color:'white'}}>About Me</a>
+            <a href="#projects" style={{textDecoration:'none',color:'white'}}>Projects</a>
+               <a href="#contact" style={{textDecoration:'none',color:'white'}}>Contact</a>
+               <a href="#skills" style={{textDecoration:'none',color:'white'}}>Skills</a>
+
+        </div>) }
+           <div className='menubar'>
+           {close &&(<img src={openimg} style={{width:'20px',height:'20px',cursor:'pointer' }} alt="img" onClick={tooglenav} />)}  
+          {open &&( <img src={closeimg} style={{width:'20px',height:'20px',cursor:'pointer'}} alt="imgs" onClick={toogleclose}/>)} 
+           </div>
+           
+        </div>
+      </div>
+    )
 }
 
 export default Menuheader;
